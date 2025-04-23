@@ -1,0 +1,258 @@
+/* ---------- Font and Page ---------- */
+@font-face {
+  font-family: "VT323";
+  src: url("../fonts/VT323-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #9fef00;
+}
+
+/* ---------- Background Images ---------- */
+body#homepage {
+  background-image: url("../images/homePageImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#sysadmin-page {
+  background-image: url("../images/sysadminImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#bugbounty-page {
+  background-image: url("../images/bugbountyimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#homelab-page {
+  background-image: url("../images/homelabImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#resources-page {
+  background-image: url("../images/resourcesImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#about-page {
+  background-image: url("../images/aboutImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#contact-page {
+  background-image: url("../images/contactImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* ---------- Header & Nav ---------- */
+/* Header Layout Container */
+.header-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #9fef00;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+  font-size: 1.1em;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #ffffff;
+  text-shadow: 0 0 6px #9fef00;
+  border-bottom: 2px solid #9fef00;
+}
+
+
+/* ---------- Content ---------- */
+.content {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-shadow: 0 0 5px #9fef00;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+/* ---------- Tables  ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: left;
+  color: #9fef00;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ---------- Links  ---------- */
+
+a {
+  color: #9fef00;
+  font-weight: bold;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #9fef00;
+  color: #ffffff;
+}
+
+/* ---------- Video  ---------- */
+
+#video-box {
+  width: 560px;
+  padding: 10px;
+  background-color: #000000; 
+  border: 3px solid #9fef00; 
+  margin: 20px auto; 
+  text-align: center;
+}
+
+/* ---------- Form  ---------- */
+
+/* Contact form using flexbox layout */
+.contact-form fieldset {
+  border: 2px solid #9fef00;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form legend {
+  color: #9fef00;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  color: #9fef00;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #555;
+  background-color: #1a1a1a;
+  color: #9fef00;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1em;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #9fef00;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #000000;
+  color: #9fef00;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1em;
+  padding: 10px;
+  border: 2px solid #9fef00;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #9fef00;
+  align-self: center;
+  width: 200px;
+}
+
+.submit-button:hover {
+  background-color: #111111;
+  color: #ffffff;
+  text-shadow: 0 0 6px #9fef00;
+  border-color: #ffffff;
+}
+
+
+

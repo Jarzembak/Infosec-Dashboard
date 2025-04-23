@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="homelab-page">
+    <header class="site-header">
+        <div class="header-container">
+            <img class="logo" src="images/logo.png" width="180" height="220" alt="pixelated lee holding a tuba">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">InfoSec Dashboard</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="sysadmin.html">Sysadmin</a></li>
+                    <li><a href="bugbounty.html">Bug Bounty</a></li>
+                    <li><a class="active" href="homelab.html">Home Lab</a></li>
+                    <li><a href="resources.html">Other Resources</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content light-text">
+        <h1 class="page-title">Home Lab Resources</h1>
+        <p>A home lab is essential for a cyber security professional (or enthusiast). There are so many tutorials
+            available
+            for free (or at a low cost), that it makes it extremely easy to get stuck in the “learning” phase, without
+            actually
+            getting your hands on anything. Combine that with the plethora of certifications marketed towards job
+            seekers, and
+            you have a recipe for what is commonly referred to as “tutorial hell”. Your home lab is where real learning
+            and
+            understanding happens, and it is important to invest time in it. Even if you don't have high end hardware,
+            there are
+            still ways you can experiment at home.</p>
+
+        <h2>Virtualization</h2>
+        <p>The first thing I would recommend is some way to run virtual machines or containers. A virtual machine is an
+            operating system that runs virtually within the operating system running on your computer. This virtual
+            machine runs
+            within a hypervisor, which sort of tricks it into thinking it is a totally separate computer. They can be
+            completely
+            isolated from your other software and apps, and can be created and deleted quickly, so if something goes
+            wrong, you
+            can easily start over without any consequences. Containers are similar, but instead of an entire operating
+            system,
+            you have a single app, or group of apps. These are often used by security researchers to package up a piece
+            of
+            vulnerable software with its configurations and dependencies all kept within the container. These can also
+            be
+            isolated from the rest of your system. Here is a list of common hypervisors and container management
+            software, which
+            you will need for virtualization.</p>
+
+        <h3>Hypervisors</h3>
+        <dl>
+            <dt>VMware</dt>
+            <dd><a
+                    href="https://softwareupdate.vmware.com/cds/vmw-desktop/">https://softwareupdate.vmware.com/cds/vmw-desktop/</a>
+            </dd>
+            <dt>VirtualBox</dt>
+            <dd><a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></dd>
+        </dl>
+
+        <h3>Containers</h3>
+        <dl>
+            <dt>Docker Desktop</dt>
+            <dd><a href="https://www.docker.com/get-started/">https://www.docker.com/get-started/</a></dd>
+        </dl>
+
+        <p>After you've taken your first step and have chosen your preferred virtualization solution, you are ready to
+            begin
+            your journey! Here is a list of resources to get you started with your homelab.</p>
+
+        <ul>
+            <li><a href="https://www.reddit.com/r/homelab/wiki/index/">https://www.reddit.com/r/homelab/wiki/index/</a>
+            </li>
+            <li><a
+                    href="https://www.kali.org/get-kali/#kali-platforms">https://www.kali.org/get-kali/#kali-platforms</a>
+            </li>
+            <li><a href="https://github.com/reswob10/HomeLabResources">https://github.com/reswob10/HomeLabResources</a>
+            </li>
+            <li><a
+                    href="https://github.com/The-Art-of-Hacking/h4cker/tree/master/build_your_own_lab">https://github.com/The-Art-of-Hacking/h4cker/tree/master/build_your_own_lab</a>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="site-footer">
+        <p>2025 Lee Jarzembak</p>
+    </footer>
+</body>
+
+</html>
