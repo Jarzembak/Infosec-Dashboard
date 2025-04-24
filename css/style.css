@@ -1,16 +1,16 @@
 /* ---------- Font and Page ---------- */
 @font-face {
+  /* This font was available for free on fontsquirrel */
   font-family: "VT323";
   src: url("../fonts/VT323-Regular.ttf") format("truetype");
-  /* This font was available for free on fontsquirrel */
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   font-family: "VT323", monospace;
+  /* font is slightly small */
   font-size: 1.5rem;
-  /* this font is slightly small */
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -115,7 +115,11 @@ body#contact-page {
 }
 
 
-/* ---------- Content ---------- */
+/* ---------- Main Page Content ---------- */
+.page-title {
+  text-align: center;
+}
+
 .content {
   max-width: 1200px;
   margin: 20px auto;
