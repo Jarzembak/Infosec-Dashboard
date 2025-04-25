@@ -90,7 +90,7 @@ body#contact-page {
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 28px;
   margin: 0;
   padding: 0;
 }
@@ -104,7 +104,7 @@ body#contact-page {
   text-decoration: none;
   font-weight: bold;
   font-family: 'VT323', monospace;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .main-nav a:hover,
